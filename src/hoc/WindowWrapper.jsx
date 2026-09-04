@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { useLayoutEffect, useRef } from "react";
 
-function WindowWrapper(Component, windowKey) {
+const WindowWrapper = (Component, windowKey) => {
   const wrapped = (props) => {
     const { focusWindow, windows } = useWindowStore();
     const { isOpen, zIndex } = windows[windowKey];
@@ -46,6 +46,6 @@ function WindowWrapper(Component, windowKey) {
   wrapped.displayName = `WindowWrapper(${Component.displayName || Component.name || "Component"})`;
 
   return wrapped;
-}
+};
 
 export default WindowWrapper;
