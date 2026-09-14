@@ -16,7 +16,7 @@ const Finder = () => {
     if (["fig", "url"].includes(item.fileType) && item.href)
       return window.open(item.href, "_blank");
 
-    openWindow(`${item.fileType}${item.kind}` , item)
+    openWindow(`${item.fileType}${item.kind}`, item);
   };
 
   const renderList = (name, items) => (
@@ -42,7 +42,7 @@ const Finder = () => {
   return (
     <>
       <div id="window-header">
-        <WindowControls target="Finder" />
+        <WindowControls target="finder" />
         <Search className="icon" />
       </div>
 
@@ -57,7 +57,7 @@ const Finder = () => {
           {activeLocation?.children?.map((item) => (
             <li
               key={item.id}
-              className={item.position}
+              className={`${item.position} cursor-pointer`}
               onClick={() => openItem(item)}
             >
               <img src={item.icon} alt={item.name} />
