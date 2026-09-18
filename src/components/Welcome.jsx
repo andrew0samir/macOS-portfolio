@@ -97,6 +97,7 @@ function Welcome() {
 
       <div className="small-screen">
         <p>This portfolio is designed for desktop/tablet screens only.</p>
+        <p className="mt-2">still working on the mobile screens.</p>
       </div>
     </section>
   );
