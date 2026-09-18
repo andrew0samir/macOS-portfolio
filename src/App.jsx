@@ -11,6 +11,7 @@ import {
   Image,
   Contact,
   Photos,
+  Trash,
 } from "@windows";
 
 gsap.registerPlugin(Draggable);
@@ -29,6 +30,7 @@ function App() {
       <Image />
       <Contact />
       <Photos />
+      <Trash />
 
       <Home />
     </main>

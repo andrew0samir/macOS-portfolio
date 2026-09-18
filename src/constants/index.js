@@ -70,7 +70,7 @@ const dockApps = [
         id: "trash",
         name: "Archive", // was "Trash"
         icon: "trash.png",
-        canOpen: false,
+        canOpen: true,
     },
 ];
 
@@ -480,6 +480,15 @@ const TRASH_LOCATION = {
             position: "top-40 left-80",
             imageUrl: "/images/trash-2.png",
         },
+        {
+            id: 3,
+            name: "trash2.png",
+            icon: "/images/image.png",
+            kind: "file",
+            fileType: "img",
+            position: "top-60 left-30",
+            imageUrl: "/images/trash-2.png",
+        },
     ],
 };
 
@@ -499,6 +508,7 @@ const WINDOW_CONFIG = {
     safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    trash: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
