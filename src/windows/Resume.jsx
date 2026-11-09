@@ -6,10 +6,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
   const [numPages, setNumPages] = useState(null);
@@ -22,9 +19,9 @@ const Resume = () => {
     <>
       <div id="window-header">
         <WindowControls target="resume" />
-        <h2>Resume.pdf</h2>
+        <h2>Andrew Samir's Resume.pdf</h2>
         <a
-          href="files/resume.pdf"
+          href="files/Andrew Samir-Software Engineer.pdf"
           download
           className="cursor-pointer"
           title="Download Resume"

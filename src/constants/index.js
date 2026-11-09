@@ -5,12 +5,12 @@ const navLinks = [
         type: "finder",
     },
     {
-        id: 3,
+        id: 2,
         name: "Contact",
         type: "contact",
     },
     {
-        id: 4,
+        id: 3,
         name: "Resume",
         type: "resume",
     },
@@ -77,25 +77,11 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
+        date: "Sep 8, 2026",
         title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-        image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-    },
-    {
-        id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-        image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-    },
-    {
-        id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+            "Instagram Page Redesign: A Fresh Take on Social Media",
+        image: "/images/tekvora-page.png",
+        link: "https://www.instagram.com/tek.vora/",
     },
 ];
 
@@ -109,10 +95,6 @@ const techStack = [
         items: ["React Native", "Expo"],
     },
     {
-        category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
-    },
-    {
         category: "Backend",
         items: ["Node.js", "Express"],
     },
@@ -121,8 +103,12 @@ const techStack = [
         items: ["MongoDB", "PostgreSQL"],
     },
     {
+        category: "Styling",
+        items: ["Tailwind CSS", "CSS", "Sass"],
+    },
+    {
         category: "Dev Tools",
-        items: ["Git", "GitHub", "Claude", "Cursor"],
+        items: ["Git", "GitHub", "Claude", "figma", "deployment"],
     },
 ];
 
@@ -134,20 +120,6 @@ const socials = [
         bg: "#f4656b",
         link: "https://github.com/andrew0samir",
     },
-    // {
-    //     id: 2,
-    //     text: "Platform",
-    //     icon: "/icons/atom.svg",
-    //     bg: "#4bcb63",
-    //     link: "https://jsmastery.com/",
-    // },
-    // {
-    //     id: 3,
-    //     text: "Twitter/X",
-    //     icon: "/icons/twitter.svg",
-    //     bg: "#ff866b",
-    //     link: "https://x.com/jsmasterypro",
-    // },
     {
         id: 2,
         text: "LinkedIn",
@@ -188,19 +160,11 @@ const photosLinks = [
 const gallery = [
     {
         id: 1,
-        img: "/images/blog1.png",
+        img: "/images/me2.jpeg",
     },
     {
         id: 2,
-        img: "/images/blog1.png",
-    },
-    {
-        id: 3,
-        img: "/images/blog1.png",
-    },
-    {
-        id: 4,
-        img: "/images/blog1.png",
+        img: "/images/me1.jpeg",
     },
 ];
 
@@ -222,7 +186,7 @@ const WORK_LOCATION = {
     icon: "/icons/work.svg",
     kind: "folder",
     children: [
-        // ▶ Project 1
+        // Project 1
         {
             id: 5,
             name: "Nike Ecommerce Website Application",
@@ -275,7 +239,7 @@ const WORK_LOCATION = {
             ],
         },
 
-        // ▶ Project 2
+        // Project 2
         {
             id: 6,
             name: "AI Resume Analyzer",
@@ -328,7 +292,7 @@ const WORK_LOCATION = {
             ],
         },
 
-        // ▶ Project 3
+        // Project 3
         {
             id: 7,
             name: "Food Delivery App",
@@ -397,7 +361,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-10 left-5",
-            imageUrl: "/images/blog1.png",
+            imageUrl: "/images/me.jpeg",
         },
         {
             id: 2,
@@ -406,17 +370,17 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/blog1.png",
+            imageUrl: "/images/me1.jpeg",
         },
-        {
-            id: 3,
-            name: "conference-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 left-80",
-            imageUrl: "/images/blog1.png",
-        },
+        // {
+        //     id: 3,
+        //     name: "conference-me.png",
+        //     icon: "/images/image.png",
+        //     kind: "file",
+        //     fileType: "img",
+        //     position: "top-52 left-80",
+        //     imageUrl: "/images/",
+        // },
         {
             id: 4,
             name: "about-me.txt",
@@ -425,12 +389,12 @@ const ABOUT_LOCATION = {
             fileType: "txt",
             position: "top-60 left-5",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/blog1.png",
+            image: "/images/me2.jpeg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+                "Hey! I’m Andrew 👋, a software engineer who enjoys building sleek, interactive websites that actually work well.",
                 "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
                 "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Outside of dev work, you'll find me reading novels at 2AM, sipping overpriced coffee, painting a landscape or impulse-buying gadgets and tools I absolutely convinced myself I needed 😅",
             ],
         },
     ],
@@ -480,15 +444,15 @@ const TRASH_LOCATION = {
             position: "top-40 left-80",
             imageUrl: "/images/trash-2.png",
         },
-        {
-            id: 3,
-            name: "trash2.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-60 left-30",
-            imageUrl: "/images/trash-2.png",
-        },
+        // {
+        //     id: 3,
+        //     name: "trash2.png",
+        //     icon: "/images/image.png",
+        //     kind: "file",
+        //     fileType: "img",
+        //     position: "top-60 left-30",
+        //     imageUrl: "/images/trash-2.png",
+        // },
     ],
 };
 
